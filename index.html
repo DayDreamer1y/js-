@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>贪吃蛇</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <button id="btn1">开始</button>
+  <button id="btn2">停止</button>
+  <input type="text" id="input" value="分数是：0" readonly>
+  <!-- 地图 -->
+  <div id="map">
+   <!-- 规律：不断的增加新蛇头
+      
+       
+    -->
+
+  </div>
+  <!--死亡提示 -->
+  <div class="dead">
+    <h1>Game Over</h1>
+    <span id="btn3">重新开始</span>
+  </div>
+  <!-- jQuery -->
+  <script src="./lib/jquery-1.12.4.js"></script>
+  <script src="js/food.js"></script>
+  <script src="js/snake.js"></script>
+
+  <script src="js/game.js"></script>
+  <script>
+    // var food = new Food ();
+    // food.randomLocation();
+
+    // var snake = new Snake();
+    // snake.showSnake();
+       var game = new Game();
+       
+    // 开始
+      $('#btn1').click(function(){
+        // 游戏对象.开始
+        game.start();
+        
+      });
+      $('#btn3').click(function(){
+        game.reStart();
+      })
+      $('#btn2').click(function(){
+        game.stop();
+      })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+}
+/* 地图 */
+
+#map {
+  position: relative;
+  margin: 40px auto;
+  width: 800px;
+  height: 500px;
+  background: url(../img/map2.png) no-repeat;
+  /* box-shadow: 0px 0px 50px 20px green; */
+  border: 2px solid black;
+
+}
+/* 蛇头、蛇身体、食物基本样式 */
+.snake-head,
+.snake-body,
+.food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* border-radius: 17px; */
+}
+/* 更改蛇头方向 */
+
+/* 蛇的身体 */
+.snake-body {
+    background: url(../img/body2.png);
+    background-size: 20px;
+    border-radius: 3px;
+    /* box-shadow: 0 0 10px 1px gold; */
+}
+/* 蛇头样式 */
+.snake-head {
+    background: url(../img/593ae7f99ca2d_610.jpg);  
+    background-size: 20px;
+}
+/* 食物 */
+.food {
+    background:url(../img/food2.png) no-repeat;
+    background-size: 20px;
+    border-radius: 50%;
+    animation: food infinite alternate-reverse 0.5s;   
+}
+@keyframes food{
+    0%{
+        box-shadow: 0 0 5px 2px rgb(241, 238, 40);
+    }
+    100% {
+        box-shadow: 0 0 100px 2px rgb(241, 238, 40);
+    }
+    
+}
+
+.dead {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.8);
+    /* background: blue; */
+    position: absolute;
+    top:0;
+    left:0;
+    color:red;
+    display: none;
+    
+}
+.dead h1 {
+    text-align: center;
+    font:bold 100px '宋体';
+    color:#fff;
+}
+.dead span {
+    width: 100px;
+    height: 30px;
+    background: #00ff00;
+    font:bold 20px/30px '宋体';
+    padding:10px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.dead span:hover {
+    background: orange;
+}
+input {
+    width: 80px; 
+    padding-right: 20px;
+}
