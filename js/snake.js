@@ -26,6 +26,7 @@ Snake.prototype.getNewHeadLocation = function () {
         // 就在旧蛇头的基础上 更改left 和 top 的值
         //         右 left + 20
         if (this.direction == 'right') {
+            
             x = x + 20;
           } else if (this.direction == 'left') {
             x = x - 20;

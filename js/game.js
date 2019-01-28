@@ -36,20 +36,24 @@ Game.prototype.start = function () {
         var code = e.keyCode;
         switch (code) {
             case 37:
+            if(that.snake.direction != 'right'){
                 that.snake.direction = 'left';
-                
+            }                               
                 break;
             case 38:
+            if(that.snake.direction != 'bottom'){
                 that.snake.direction = 'top';
-                
+            } 
                 break;
             case 39:
+            if(that.snake.direction != 'left'){
                 that.snake.direction = 'right';
-               
+            } 
                 break;
             case 40:
+            if(that.snake.direction != 'top'){
                 that.snake.direction = 'bottom';
-              
+            } 
                 break;
         }
     })
