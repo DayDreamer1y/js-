@@ -14,7 +14,6 @@ html {
   position: relative;
 }
 .body .start {
-  display: none;
   width: 12.5rem;
   height: 1.875rem;
   position: fixed;
@@ -22,6 +21,7 @@ html {
   margin-top: 50%;
   top: -3.125rem;
   left: -6.25rem;
+  overflow: hidden;
 }
 .body .start .button {
   height: 100%;
@@ -71,11 +71,57 @@ html {
 }
 .body .fangxiang {
   width: 100%;
-  height: 9.375rem;
-  background: pink;
+  height: 8.4375rem;
+  position: relative;
+}
+.body .fangxiang img {
+  width: 2.5rem;
+}
+.body .fangxiang div {
+  position: absolute;
+}
+.body .fangxiang .left {
+  left: 1.875rem;
+  top: 4.0625rem;
+}
+.body .fangxiang .right {
+  left: 6.875rem;
+  top: 4.0625rem;
+}
+.body .fangxiang .top {
+  left: 4.375rem;
+  top: 1.40625rem;
+}
+.body .fangxiang .bottom {
+  left: 4.375rem;
+  top: 6.40625rem;
+}
+.body .fangxiang .brief {
+  width: 50%;
+  height: 100%;
+  right: 0.9375rem;
+  top: 60%;
+}
+.body .fangxiang .brief p {
+  font-size: 0.5rem;
+  color: #666;
+}
+.body .fangxiang a {
+  display: block;
+  position: absolute;
+  top: 1.875rem;
+  right: 4.6875rem;
+  width: 6.25rem;
+  height: 1.875rem;
+  border: 0.0625rem solid #aca9a9;
+  color: #666;
+  font-weight: 700;
+  font-size: 0.78125rem;
+  text-align: center;
+  line-height: 1.875rem;
+  background: #7fbbff;
 }
 .body .dead {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;

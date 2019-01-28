@@ -17,7 +17,7 @@ body,html{
     position: relative;
     // 开始游戏
     .start{
-       display: none;
+    //  display: none;
         width: 400rem/@size;
         height: 60rem/@size;
         position: fixed;
@@ -25,6 +25,7 @@ body,html{
         margin-top: 50%;
         top:-100rem/@size;
         left:-200rem/@size;
+        overflow: hidden;
        .button{
            height: 100%;
             button{
@@ -39,6 +40,7 @@ body,html{
             }
        }
        .difficulty{
+         
            width: 100%;
            height: 80rem/@size;
            position: absolute;
@@ -80,15 +82,64 @@ body,html{
     // 方向按钮
     .fangxiang{
         width: 100%;
-        height: 300rem/@size;
-        background: pink;
+        height: 270rem/@size;
+        // background: pink;
+        position: relative;
+        img{
+            width: 80rem/@size;
+           
+        }
+        div{
+            position: absolute;
+            
+        }
         .left{
-
+            left: 60rem/@size;
+            top:130rem/@size;
+           
+        }
+        .right{
+            left: 220rem/@size;
+            top: 130rem/@size;
+        }
+        .top{
+            left: 140rem/@size;
+            top: 45rem/@size;
+        }
+        .bottom{
+            left: 140rem/@size;
+            top: 205rem/@size;
+        }
+        .brief{
+            width: 50%;
+            height: 100%;
+            right: 30rem/@size;
+            top:60%;
+            p{
+                font-size: 16rem/@size;
+                color:#666;
+            }
+        }
+        a{
+            display: block;
+            position: absolute;
+            top: 60rem/@size;
+            right: 150rem/@size;
+            width: 200rem/@size;
+            height: 60rem/@size;
+            border:2rem/@size solid rgb(172, 169, 169);
+            color: #666;
+            font-weight: 700;
+            font-size: 25rem/@size;
+            text-align: center;
+            line-height: 60rem/@size;
+            background: rgb(127, 187, 255);
+            
         }
     }
         // game voer
     .dead{
-        display: none;
+        // display: none;
         position: absolute;
         top:0;
         left: 0;
